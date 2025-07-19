@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  overflow: hidden; /* ✅ elimina scroll */
+  height: 100vh;
+}
+
+.pagina {
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 2rem 1rem 5rem;
+}
+
+/* ✅ Tamaño unificado del logotipo */
+.logo-centro img,
+.logo {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto 1rem;
+}
+
+.bajada {
+  font-size: 0.85rem;
+  color: #2a7cff;
+  margin-bottom: 1rem;
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+/* === Botones estilo primera página === */
+.acordeon-btn {
+  width: 100%;
+  max-width: 320px; /* Limita el ancho */
+  background: #f5f8ff;
+  border: none;
+  padding: 10px 12px; /* Reduce el espacio interno */
+  font-size: 14px; /* Reduce el tamaño del texto */
+  font-weight: normal;
+  border-radius: 8px;
+  margin: 0 auto 8px auto; /* Centra y reduce margen inferior */
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+
+.acordeon-btn:hover {
+  background: #e6edff;
+}
+
+.flecha {
+  transition: transform 0.3s ease;
+}
+
+.acordeon-btn.active .flecha {
+  transform: rotate(180deg);
+}
+
+/* Contenido desplegable */
+.contenido {
+  display: none;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Footer estilo moderno */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 428px;
+  background: linear-gradient(to right, #7a5cff, #5da0ff); /* ✅ Degradado */
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+/* Botón del menú */
+.footer .boton-footer {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer .boton-footer:hover {
+  background: white;
+  color: #5a7bff; /* ✅ Cambia el color del texto al hacer hover */
+}
+
+.contenido {
+  display: none;
+  padding: 10px 12px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.contenido ul {
+  padding-left: 18px; /* separa un poco la lista */
+  margin: 0;
+}
+
+.contenido li {
+  margin-bottom: 6px;
+  list-style-type: "• "; /* agrega viñetas tipo punto */
+}
+
+.contenido strong {
+  font-weight: bold;
+  color: #000;
+}

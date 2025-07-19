@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pagina {
+    max-width: 428px;
+    margin: 0 auto;
+    padding: 2rem 1rem 5rem;
+}
+
+/* ✅ Tamaño unificado del logotipo en todas las páginas */
+.logo-centro img,
+.logo {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto 1rem;
+}
+
+.bajada {
+  font-size: 0.8rem;
+  color: #2a7cff;
+  margin-bottom: 0.8rem;
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+/* Botones */
+.botones-opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem; /* ✅ Un poco más de espacio entre botones */
+  margin-bottom: 2rem; /* ✅ Los baja ligeramente antes del personaje */
+}
+
+.boton-opcion {
+  display: inline-block;
+  background-color: #f3f6fd;
+  color: #111;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 70%;
+  max-width: 240px;
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.boton-opcion:hover {
+  background-color: #dbe9ff;
+  transform: scale(1.03);
+}
+
+.imagen-inferior {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 84px; /* ✅ Espacio antes del footer */
+}
+
+.imagen-inferior img {
+  width: 350px;
+  height: auto;
+  display: block;
+}
+
+/* Footer estilo moderno */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 428px;
+  background: linear-gradient(to right, #7a5cff, #5da0ff);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+/* Botón del menú */
+.footer .boton-footer {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer .boton-footer:hover {
+  background: white;
+  color: #5a7bff;
+}

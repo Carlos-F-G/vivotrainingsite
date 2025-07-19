@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  overflow: hidden; /* ✅ elimina scroll */
+  height: 100vh;
+}
+
+.pagina {
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 2rem 1rem 5rem;
+}
+
+/* ✅ Tamaño unificado del logotipo */
+.logo-centro img,
+.logo {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto 1rem;
+}
+
+.bajada {
+  font-size: 0.85rem;
+  color: #2a7cff;
+  margin-bottom: 1rem;
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+/* Botones de opciones */
+.botones-opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* ✅ más espacio entre botones */
+  margin-top: 1rem; /* ✅ baja un poco los botones */
+}
+
+.boton-opcion {
+  display: inline-block;
+  background-color: #f3f6fd;
+  color: #111;
+  padding: 0.9rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 70%;
+  max-width: 260px;
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.boton-opcion:hover {
+  background-color: #dbe9ff;
+  transform: scale(1.03);
+}
+
+/* ✅ Personaje fijo arriba del footer */
+.imagen-inferior {
+  position: fixed;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.imagen-inferior img {
+  width: 180px; /* ✅ un poco más pequeño */
+  height: auto;
+  display: block;
+}
+
+/* ✅ Footer estilo moderno */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 428px;
+  background: linear-gradient(to right, #7a5cff, #5da0ff);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.footer .boton-footer {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer .boton-footer:hover {
+  background: white;
+  color: #5a7bff;
+}

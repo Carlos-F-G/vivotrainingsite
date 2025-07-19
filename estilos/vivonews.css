@@ -1,0 +1,148 @@
+/* === Estilos Vivo News con Miniaturas === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: white;
+  max-width: 428px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.pagina {
+    max-width: 428px;
+    margin: 0 auto;
+    padding: 2rem 1rem 5rem;
+}
+.pagina {
+    max-width: 428px;
+    margin: 0 auto;
+    padding: 2rem 1rem 5rem;
+}
+/* Header fijo */
+.encabezado {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 428px;
+  background-color: white;
+  text-align: center;
+  padding: 1.5rem 0 1rem;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ✅ Tamaño unificado del logotipo en todas las páginas */
+.logo-centro img,
+.logo {
+  width: 240px;       /* 🔥 Tamaño fijo para todos los logos */
+  max-width: 100%;    /* ✅ Evita que se desborde en pantallas pequeñas */
+  height: auto;       /* ✅ Mantiene la proporción */
+  display: block;
+  margin: 3.5rem auto 1rem; /* 🔥 Espaciado uniforme superior e inferior */
+}
+
+
+.bajada {
+  font-size: 0.9rem;
+  color: #2a7cff;
+  margin-bottom: 0.5rem;
+}
+
+/* Contenido */
+.contenido {
+  padding-top: 170px; /* ✅ Antes: 150px, ahora lo bajamos un poco */
+  padding-bottom: 130px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+.seccion-noticias {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+/* Card de noticia con imagen */
+.noticia-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #f3f6fd;
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.noticia-card:hover {
+  background-color: #dbe9ff;
+}
+
+.noticia-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.texto-noticia {
+  flex: 1;
+  text-align: left;
+}
+
+.texto-noticia h3 {
+  font-size: 0.95rem;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.texto-noticia p {
+  font-size: 0.8rem;
+  color: #444;
+}
+
+/* Footer estilo moderno */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 428px;
+  background: linear-gradient(to right, #7a5cff, #5da0ff); /* ✅ Degradado */
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+/* Botón del menú */
+.footer .boton-footer {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer .boton-footer:hover {
+  background: white;
+  color: #5a7bff; /* ✅ Cambia el color del texto al hacer hover */
+}

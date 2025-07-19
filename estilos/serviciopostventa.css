@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .pagina {
+      max-width: 428px;
+      margin: 0 auto;
+      padding: 2rem 1rem 5rem;
+  }
+  
+  /* ✅ Tamaño unificado del logotipo en todas las páginas */
+  .logo-centro img,
+  .logo {
+    width: 240px;       /* 🔥 Tamaño fijo para todos los logos */
+    max-width: 100%;    /* ✅ Evita que se desborde en pantallas pequeñas */
+    height: auto;       /* ✅ Mantiene la proporción */
+    display: block;
+    margin: 1.5rem auto 1rem; /* 🔥 Espaciado uniforme superior e inferior */
+  }
+  
+  
+  /* Bajada: el texto debajo del logo */
+  .bajada {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  /* Título principal */
+  .titulo {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 2rem;
+  }
+  
+  /* ✅ Botones iguales y centrados */
+  .opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .opcion,
+  .link-equipos { /* ✅ Ahora 'Equipos' y los demás usan el mismo diseño */
+    display: inline-block;
+    background-color: #f3f6fd;
+    color: #111;
+    padding: 0.9rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    width: 75%;
+    max-width: 260px;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .opcion:hover,
+  .link-equipos:hover {
+    background-color: #dbe9ff;
+    transform: scale(1.03);
+  }
+  
+  /* Footer estilo moderno */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 428px;
+    background: linear-gradient(to right, #7a5cff, #5da0ff); /* ✅ Degradado */
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+  
+  /* Botón del menú */
+  .footer .boton-footer {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .footer .boton-footer:hover {
+    background: white;
+    color: #5a7bff; /* ✅ Cambia el color del texto al hacer hover */
+  }
+  
+  /* Botón final infografía */
+  .boton-final-infografia {
+    text-align: center;
+    margin: 2rem 0 5rem;
+  }
+  
+  .boton-test {
+    display: inline-block;
+    background-color: #2a7cff;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .boton-test:hover {
+    background-color: #0057ff;
+    transform: scale(1.03);
+  }
+  
+  
+  /* Imagen inferior */
+  .imagen-inferior {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagen-inferior img {
+    width: 300px;  /* 🔥 achicamos la imagen (antes 300px o más grande) */
+    max-width: 80%; /* ✅ mantiene proporción en pantallas pequeñas */
+    height: auto;
+    display: block;
+  }
+  
